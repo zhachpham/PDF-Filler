@@ -81,7 +81,7 @@ public class pdfBox{
 
 	      
 	      //Calls PDF File to Fill
-	      File file = new File("/Users/zhachpham/Desktop/SEP Account App.pdf"); 
+	      File file = new File("../../Sep Account App.pdf"); 
 		    PDDocument document = PDDocument.load(file); 
 		    
 	        
@@ -347,9 +347,9 @@ public class pdfBox{
 		        
 		        //Opens Filled PDF
 		        try {
-		            document.save("/Users/zhachpham/Desktop/SEP Account App.pdf"); // save changes to another file
+		            document.save("../../Sep Account App.pdf"); // save changes
 			    document.close();
-			    Desktop.getDesktop().open(new File("/Users/zhachpham/Desktop/SEP Account App.pdf"));
+			    Desktop.getDesktop().open(new File("../../Sep Account App.pdf"));
 		        }
 		        
 		        catch (Exception e)
